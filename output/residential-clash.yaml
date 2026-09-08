@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
-  server: 826ff98e-tla000-tuklme-ueq.hk3.hyhuawei.com
+  server: 58.153.148.126
   port: 443
-  uuid: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
   udp: true
   tls: true
   skip-cert-verify: true
@@ -23,49 +23,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  type: ss
-  server: 36.224.151.80
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  type: ss
-  server: glance.asuscomm.com
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: vless
   server: 118.167.200.67
   port: 24215
@@ -76,7 +34,38 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  type: ss
+  server: 36.224.151.80
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.53
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,11 +73,10 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,10 +84,9 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

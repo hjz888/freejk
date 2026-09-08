@@ -19,17 +19,17 @@ proxies:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - xiaohe
   type: vless
-  server: 104.18.43.76
-  port: 8880
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip
+    path: /db55c40bbc75
     headers:
-      Host: silent-cake-fb8d.69-a76.workers.dev
+      Host: 38.60.168.98
 - name: 🇲🇾 MY 03 - xiaohe
   type: vless
   server: 38.60.168.98

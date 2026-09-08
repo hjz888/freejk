@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: k2.cloud--vpn.site
   port: 443
-  uuid: daee66b7-3f5e-46d7-83c1-4d93a5fb33c3
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
   tls: true
   skip-cert-verify: true
@@ -42,20 +42,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - xiaohe
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: daee66b7-3f5e-46d7-83c1-4d93a5fb33c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +50,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +58,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
-  - 🇫🇮 FI 04 - xiaohe
 rules:
 - MATCH,PROXIES
