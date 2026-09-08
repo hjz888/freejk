@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
-  server: 5fca3221-tl4g00-tpkh0c-1r7od.hk3.hyhuawei.com
+  server: 58.153.148.126
   port: 443
   uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
   udp: true
@@ -15,42 +15,22 @@ proxies:
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  type: ss
-  server: 36.224.151.80
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
-  type: vless
-  server: 162.159.48.32
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   type: ss
   server: 36.224.152.189
   port: 50099
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   type: ss
-  server: r3mrcg001286ek2.cybervena.com
+  server: r3mrcg00129437x.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   type: vless
   server: 118.167.200.67
   port: 24215
@@ -61,8 +41,8 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   type: vless
   server: 59.125.69.19
   port: 443
@@ -76,24 +56,10 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.19
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
-  type: vless
-  server: 172.64.147.104
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   type: vless
   server: 188.114.97.6
-  port: 2087
+  port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
@@ -104,20 +70,13 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 10 (家宽) - xiaohe
-  type: vless
-  server: 104.18.38.47
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  type: ss
+  server: 36.224.147.226
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,14 +84,11 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,13 +96,10 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -20,6 +20,33 @@ proxies:
       Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 212.67.9.113
+  port: 2200
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: 212.67.9.113
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
   server: 45.9.15.206
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
@@ -32,81 +59,7 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 104.18.39.218
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: 104.18.46.234
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 172.64.42.85
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: vless
-  server: 45.9.15.206
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   type: vless
   server: 46.8.200.91
   port: 443
@@ -120,27 +73,34 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ru05.abvpn.ru
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: ss
   server: 138.124.68.88
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: Y2ZlN
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: 147.45.175.81
-  port: 8443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlessru.duckdns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: vlessru.duckdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -154,9 +114,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,8 +127,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
