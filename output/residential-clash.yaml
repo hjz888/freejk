@@ -4,54 +4,54 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 188.114.97.6
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 36.224.152.189
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: dlbgwqqngrjbwan.jiedddym.com
-  port: 42868
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  server: 84.22.150.239
+  port: 444
   udp: true
   type: vless
-  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
-  flow: xtls-rprx-vision
+  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
   tls: true
-  reality-opts:
-    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
-    short-id: 747a75eb5ecef8
-  servername: www.apple.com
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: wwbqwqqnlyydssc.cfooov.xyz
-  port: 39817
-  udp: true
-  type: vless
-  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4
-    short-id: 0044d4f490e795b8
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

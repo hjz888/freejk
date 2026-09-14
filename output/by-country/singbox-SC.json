@@ -6,43 +6,33 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "64.49.38.3",
-      "server_port": 8443,
-      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "server": "188.114.96.3",
+      "server_port": 2087,
+      "uuid": "756e8f39-04e8-436d-b5c6-905d37d9562c",
       "tls": {
         "enabled": true,
-        "server_name": "download.autodesk.com",
+        "server_name": "Ez-98919A.MOtoRicb.Workers.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE",
-          "short_id": ""
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "138.124.0.168",
-      "server_port": 8080,
-      "password": "h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-legend-se.roxa.org",
-        "insecure": false
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
+        "headers": {
+          "Host": "ez-98919a.motoricb.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
-      "server": "hk3n.wxgqlfx.vip",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -51,7 +41,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -66,8 +56,7 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ]
     },
     {
@@ -75,8 +64,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

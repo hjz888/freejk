@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -13,43 +27,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe",
+      "server": "84.22.150.239",
+      "server_port": 444,
+      "uuid": "dc83276f-268a-4b18-9f63-63c73e11ffd8",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "wwbqwqqnlyydssc.cfooov.xyz",
-      "server_port": 39817,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
-          "short_id": "0044d4f490e795b8"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
         }
       }
     },
@@ -58,18 +53,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "104.21.78.9",
+      "server_port": 443,
+      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
       "server": "91.224.87.22",
       "server_port": 9882,
       "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
@@ -32,14 +55,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

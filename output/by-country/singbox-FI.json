@@ -4,19 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "188.132.237.20",
-      "server_port": 2095,
-      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "188.132.237.20",
+      "server_port": 2095,
+      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
     },
     {
       "type": "selector",
