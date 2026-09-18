@@ -13,7 +13,7 @@ proxies:
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 85.204.107.181
+  server: 85.204.107.175
   port: 8443
   udp: true
   type: hysteria2
