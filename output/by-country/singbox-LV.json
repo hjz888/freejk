@@ -22,7 +22,7 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-      "server": "46.243.142.227",
+      "server": "shprcdn.quest",
       "server_port": 10443,
       "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
       "tls": {
@@ -30,7 +30,7 @@
         "server_name": "shprcdn.quest",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

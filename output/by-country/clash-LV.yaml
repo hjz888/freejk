@@ -19,7 +19,7 @@ proxies:
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 46.243.142.227
+  server: shprcdn.quest
   port: 10443
   udp: true
   type: vless
@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k
   servername: shprcdn.quest
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: google.storage.v2.Storage
