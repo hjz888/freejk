@@ -4,19 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  server: 132.243.203.218
-  port: 8443
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  server: 188.166.49.168
+  port: 2083
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /v?ed=2560
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -24,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 rules:
 - MATCH,PROXIES

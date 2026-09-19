@@ -26,20 +26,19 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 140.245.38.33
-  port: 2096
+  server: 103.137.22.71
+  port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
+    path: /register?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
