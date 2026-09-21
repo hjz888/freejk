@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 185.125.100.76
-  port: 8443
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 172.66.44.212
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: iDB8onmvBnTuyt5T7T6CejfW8vlRb.PagES.DeV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /trade/game/movies
+    path: /vl/6mJ4GmDKCRZ5zNJka52LVXs3XMbvJohS?ed=2560
     headers:
-      Host: cdn8848.776676.xyz
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
