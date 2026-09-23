@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.32.47",
+      "type": "trojan",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "server": "199.232.78.101",
       "server_port": 443,
-      "uuid": "1f87cbe7-316b-49ba-a416-d3c2af72ed50",
+      "password": "MITIVpN",
       "tls": {
         "enabled": true,
-        "server_name": "spidertest.vibenest.net",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,8 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/1f87cbe7-316b-49ba-a416-d3c2af72ed50",
         "headers": {
-          "Host": "spidertest.vibenest.net"
+          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
         }
       }
     },
@@ -34,14 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
