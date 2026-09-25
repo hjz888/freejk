@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.15.103
-  port: 443
+  server: 104.18.32.47
+  port: 2087
   udp: true
   type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
   tls: true
-  servername: server9.9966338.xyz
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /imnotarealherox
+    path: /game
     headers:
-      Host: server9.9966338.xyz
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
