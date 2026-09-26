@@ -14,6 +14,7 @@ proxies:
   tls: true
   servername: md-new.failspace.top
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

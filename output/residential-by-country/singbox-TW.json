@@ -9,7 +9,7 @@
       "server": "namrcg001640lrm.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
+      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
     },
     {
       "type": "vless",
