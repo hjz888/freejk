@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: hikvision-plus.com
-  port: 2052
+  server: 104.18.15.103
+  port: 443
   udp: true
   type: vless
-  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  tls: true
+  servername: server9.9966338.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /imnotarealherox
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
