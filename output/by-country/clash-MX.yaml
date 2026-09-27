@@ -4,25 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇿 DZ 01 - xiaohe
-  server: 85.204.107.189
-  port: 8443
+- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  server: 45.164.20.114
+  port: 10226
   udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇿 DZ 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇿 DZ 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
 rules:
 - MATCH,PROXIES
