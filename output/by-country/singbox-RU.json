@@ -4,42 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "188.114.96.3",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "172.64.158.146",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/tr/3F3fUAGJks9doKvjt8AREH4QR?ed=2560",
+        "path": "/?ed=2560security=tls ",
         "headers": {
-          "Host": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "176.32.35.2",
-      "server_port": 10090,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
+      "server": "172.64.53.55",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "91.196.32.163",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -64,7 +70,8 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ]
     },
     {
@@ -73,7 +80,8 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
