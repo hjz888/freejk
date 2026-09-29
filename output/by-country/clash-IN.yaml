@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 172.67.208.1
+  server: 172.64.32.108
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 104.21.69.118
   port: 443
   udp: true
   type: vless
@@ -19,7 +30,18 @@ proxies:
     path: /sync
     headers:
       Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 02 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -30,19 +52,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 139.84.177.239
-  port: 443
-  udp: true
-  type: vless
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-  servername: googleapis.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +61,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +70,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 rules:
 - MATCH,PROXIES
