@@ -25,8 +25,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
+      "server": "31.57.185.82",
+      "server_port": 23114,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y="
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
       "server": "185.95.231.233",
       "server_port": 443,
       "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
@@ -36,7 +44,7 @@
         "server_name": "store.steampowered.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,14 +52,6 @@
           "short_id": "a1b2c3d4"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
-      "server": "31.57.185.82",
-      "server_port": 23114,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y="
     },
     {
       "type": "selector",
