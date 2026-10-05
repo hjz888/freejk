@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "43.255.156.166",
+      "server": "103.30.76.197",
       "server_port": 31094,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "www.lamer.com.sg",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
