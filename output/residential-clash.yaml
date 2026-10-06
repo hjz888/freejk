@@ -15,7 +15,7 @@ proxies:
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 172.66.152.4
+  server: 45.192.201.140
   port: 443
   udp: true
   type: vless
@@ -23,7 +23,7 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
