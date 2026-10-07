@@ -15,9 +15,9 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: aksai.org
+  server: 185.67.125.90
   port: 443
   udp: true
   type: vmess
@@ -43,8 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select
