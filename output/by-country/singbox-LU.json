@@ -4,25 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "175.195.149.58",
-      "server_port": 10280,
-      "uuid": "8638521a-7d64-4ad0-9112-83aa1fc19867",
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "server_name": "www.volumeroot.com",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/assignment",
         "headers": {
-          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+          "Host": "www.volumeroot.com"
         }
       }
     },
@@ -31,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
