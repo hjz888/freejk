@@ -4,29 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.97.3",
+      "server": "cz.h2.cleanersaz.help",
       "server_port": 443,
-      "password": "pjg&JybcgFsca,+gQMa",
+      "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
         "enabled": true,
-        "server_name": "022XW1dmCZG0c6165pcLA6.tOMborn69.WoRKErs.Dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/4SzHKYN7XBvR1ddoFe2atydxL69?ed=2560",
-        "headers": {
-          "Host": "022xw1dmczg0c6165pcla6.tomborn69.workers.dev"
-        }
+        "server_name": "cz.h2.cleanersaz.help",
+        "insecure": true
       }
     },
     {
