@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -32,8 +32,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "194.68.44.42",
+      "server_port": 64546,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U83u9OGpvSatIUW7LsWffr"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
       "server": "82.152.132.120",
       "server_port": 443,
       "uuid": "3e0c1fbf-467a-49d7-abd2-3a158628f3d0",
@@ -54,16 +62,8 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-      "server": "194.68.44.42",
-      "server_port": 64546,
-      "method": "chacha20-ietf-poly1305",
-      "password": "U83u9OGpvSatIUW7LsWffr"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
