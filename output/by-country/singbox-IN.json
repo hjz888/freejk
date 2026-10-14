@@ -32,10 +32,7 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "in-152.67.8.205-0242"
-        }
+        "path": "/"
       }
     },
     {

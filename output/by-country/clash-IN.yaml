@@ -27,8 +27,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: in-152.67.8.205-0242
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.tronsg.com
   port: 443
