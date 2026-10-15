@@ -18,6 +18,19 @@ proxies:
   servername: lv.nztvpn.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   server: 138.124.180.137
   port: 443
   udp: true
@@ -29,6 +42,32 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 31.57.106.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: a4801105-c0c7-4cab-87c6-f257ff2afc09
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o
+    short-id: 44f7c5615039ae1b
+  servername: www.lmt.lv
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -37,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
