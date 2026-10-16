@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
       "server": "143.246.41.31",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -34,6 +22,18 @@
           "public_key": "h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE",
           "short_id": "7f3a91c2d8e640ab"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+      "server": "ees92.shhflow.xyz",
+      "server_port": 5443,
+      "password": "43212c32-01f2-4356-b216-67dc1c178262",
+      "tls": {
+        "enabled": true,
+        "server_name": "ees92.shhflow.xyz",
+        "insecure": false
       }
     },
     {
@@ -61,48 +61,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "ees92.shhflow.xyz",
-      "server_port": 5443,
-      "password": "43212c32-01f2-4356-b216-67dc1c178262",
-      "tls": {
-        "enabled": true,
-        "server_name": "ees92.shhflow.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-      "server": "77.110.105.122",
-      "server_port": 443,
-      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "co-es.speedtec.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ]
     },
     {
@@ -111,9 +76,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

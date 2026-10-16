@@ -5,7 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 104.21.48.18
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -15,20 +27,13 @@ proxies:
   network: ws
   ws-opts:
     path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 62.60.233.157
-  port: 8444
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: api.apira98.org
+  port: 1080
   udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
