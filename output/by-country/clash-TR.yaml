@@ -5,17 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+  server: 62.60.233.157
+  port: 8444
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 78.135.73.47
   port: 443
@@ -30,39 +32,18 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 62.60.233.157
-  port: 8444
+  server: 8dwou5alze.chhbuv.cn
+  port: 17684
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: api.apira98.org
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: entry6.chick-chirik.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: dd045fba-0257-4643-be29-4325450ef186
+  uuid: d9109567-3fc3-4e08-9cac-4d9162ef5a9f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
-    short-id: 89e0494514ec
-  servername: www.oracle.com
-  client-fingerprint: firefox
+    public-key: AavBPGGJUpyGWiriV_Fbx-SrAvR5t-9mHeQY8uIltyo
+    short-id: 41b9cb10b696
+  servername: www.tue.nl
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,8 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,7 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
