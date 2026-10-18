@@ -12,40 +12,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-      "server": "206.1.100.148",
-      "server_port": 8443,
-      "uuid": "53373a04-2dd2-472e-af5d-d55fbffa7dbd",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "game.jafarghasemivip.ir",
-        "insecure": false,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe",
-      "server": "185.115.207.141",
-      "server_port": 443,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
-      "tls": {
-        "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
+          "fingerprint": "qq"
+        },
+        "reality": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -55,8 +36,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
     {
@@ -64,8 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
