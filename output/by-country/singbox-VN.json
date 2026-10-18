@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "104.21.23.80",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "172.67.168.158",
+      "server_port": 2087,
+      "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
       "tls": {
         "enabled": true,
-        "server_name": "my.lovehk.xyz",
-        "insecure": false
+        "server_name": "vn11vina.210z.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/KualaLumpur1",
+        "path": "/vlessvina",
         "headers": {
-          "Host": "my.lovehk.xyz"
+          "Host": "vn11vina.210z.dev"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
