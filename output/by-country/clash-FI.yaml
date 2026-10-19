@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.109.243.156
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -27,7 +15,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 2.26.3.75
   port: 443
   udp: true
@@ -35,6 +23,19 @@ proxies:
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 95.111.212.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
