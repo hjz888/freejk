@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 85.90.197.220
+- name: 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
+  server: 5.181.2.168
   port: 443
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
+    public-key: FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg
+    short-id: 86afa150bc3a48f6
+  servername: hr1-4v.zvcorp24.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
