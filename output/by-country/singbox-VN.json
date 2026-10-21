@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "hydra.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 55688,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "bilibili-vn.biliimg.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
+          "public_key": "KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw",
+          "short_id": "a46bb5972cf50671"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

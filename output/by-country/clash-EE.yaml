@@ -12,17 +12,32 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: 109.206.241.10
   skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 138.124.4.224
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: login.sakhweb.fyi
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -17,20 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 46.17.44.216
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -52,8 +38,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +45,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
