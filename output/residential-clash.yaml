@@ -18,8 +18,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 9641684.sdf65h4.top
 proxy-groups:
 - name: PROXIES
   type: select
