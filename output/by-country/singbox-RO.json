@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "de1.dedushka.top",
+      "server": "154.46.31.106",
       "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.dedushka.top",
-        "insecure": true
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "trojan",
@@ -24,18 +20,18 @@
       "tls": {
         "enabled": true,
         "server_name": "it1.dedushka.top",
-        "insecure": false
+        "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
-      "server": "185.156.44.99",
+      "server": "de1.dedushka.top",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "de1.dedushka.top",
         "insecure": true
       }
     },
