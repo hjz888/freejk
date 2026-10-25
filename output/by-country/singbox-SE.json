@@ -18,14 +18,19 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "server": "se13-node.rumedia-cdn.com",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st5ff8a.rumedia-cdn.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "5.178.109.174"
+          "Host": "st5ff8a.rumedia-cdn.com"
         }
       }
     },

@@ -13,16 +13,19 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.178.109.174
-  port: 14430
+  server: se13-node.rumedia-cdn.com
+  port: 2096
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st5ff8a.rumedia-cdn.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
+    path: /cdn/v3/live
     headers:
-      Host: 5.178.109.174
+      Host: st5ff8a.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
