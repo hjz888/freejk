@@ -14,13 +14,17 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 139.84.132.62
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
