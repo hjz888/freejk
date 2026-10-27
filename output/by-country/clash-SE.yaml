@@ -31,13 +31,13 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: swe2.obxodvpn.us
-  port: 4443
+  server: promo.betust.net
+  port: 443
   udp: true
   type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 191.44.114.179
   port: 2096

@@ -44,13 +44,13 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "swe2.obxodvpn.us",
-      "server_port": 4443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "server": "promo.betust.net",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": false
+        "server_name": "promo.betust.net",
+        "insecure": true
       }
     },
     {
