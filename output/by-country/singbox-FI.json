@@ -4,31 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "45.149.147.213",
-      "server_port": 4443,
-      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
-      "tls": {
-        "enabled": true,
-        "server_name": "45-149-147-213.sslip.io",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "kobedin-server1-vless"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
       "server": "45.149.147.213",
       "server_port": 4444,
       "password": "9b347a9b-d7a6-4b51-9890-eff62b832834",
@@ -47,6 +24,26 @@
       "transport": {
         "type": "grpc",
         "service_name": "kobedin-server1-trojan"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "45.149.147.213",
+      "server_port": 4443,
+      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
+      "tls": {
+        "enabled": true,
+        "server_name": "45-149-147-213.sslip.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "kobedin-server1-vless"
       }
     },
     {
@@ -73,9 +70,10 @@
         "enabled": true,
         "server_name": "hw3.divarkhaghazi.com.",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -88,7 +86,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "8fc752g.fi3.h1clayd.click",
+      "server": "77.42.12.225",
       "server_port": 443,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
       "tls": {
@@ -96,7 +94,7 @@
         "server_name": "8fc752g.fi3.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -110,6 +108,47 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "b223d6cf-6f94-4889-8bcf-263c15881006",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "timeline.www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -118,7 +157,9 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ]
     },
     {
@@ -129,7 +170,9 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
