@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: my.wawojk.dpdns.org
-  port: 8443
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  server: 45.136.59.28
+  port: 43000
   udp: true
   type: vless
-  uuid: 264bee07-e004-41c7-812f-aaf2daaad2c9
+  uuid: a8b8b21e-1f31-4e4d-a639-efb2de0d577e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: akVbcyv-ypq-YT4-bsi_ts85pkDwhAIapn5bCb_hj28
-    short-id: 85f609aa0f0bead8
-  servername: www.asus.com
+    public-key: osqok9aA_NR7WyAxZptD36-_U8BF_9gL8AH84MMzbFs
+    short-id: ced96d59
+  servername: 45.136.59.28
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
 rules:
 - MATCH,PROXIES

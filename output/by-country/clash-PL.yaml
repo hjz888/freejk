@@ -11,7 +11,7 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 155.117.5.208
+  server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
@@ -28,19 +28,8 @@ proxies:
     public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
     short-id: '50'
   servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -53,7 +42,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -72,7 +61,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +71,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
