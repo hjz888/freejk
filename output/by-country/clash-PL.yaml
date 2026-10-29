@@ -11,12 +11,6 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 168.222.43.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 78.17.128.153
   port: 35076
   udp: true
@@ -24,6 +18,12 @@ proxies:
   password: b4c8ee9caa74b7ba0a61
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 168.222.43.53
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: ru1.radiolumens.uk
   port: 8445
@@ -37,33 +37,15 @@ proxies:
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: pol.rvpn.app
-  port: 8388
+  server: 2.26.6.1
+  port: 2087
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 92.118.150.146
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +56,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,7 +66,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
-  - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
