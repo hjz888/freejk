@@ -20,14 +20,16 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
+  server: 45.144.234.157
+  port: 14430
   udp: true
-  type: vmess
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.211.81
   port: 465
@@ -44,16 +46,20 @@ proxies:
     headers:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 45.144.234.157
-  port: 14430
+  server: 77.42.12.225
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: f345a414c040
 proxy-groups:
 - name: PROXIES
   type: select
