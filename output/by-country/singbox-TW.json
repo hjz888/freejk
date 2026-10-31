@@ -6,24 +6,24 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "160.187.100.109",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-      "server": "103.115.109.49",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
         "insecure": true
       }
     },
@@ -55,11 +55,18 @@
       "tls": {
         "enabled": true,
         "server_name": "n04.jinggai.online",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
+        }
       }
     },
     {
