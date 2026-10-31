@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "8.35.211.242",
+      "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -25,7 +25,7 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 02 - xiaohe",
-      "server": "vpn.cintaku.qzz.io",
+      "server": "104.17.11.191",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -34,7 +34,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
