@@ -17,12 +17,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 66.163.118.244
+  server: 66.163.118.62
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.discovergreatjobsandadvanceyourcareer.com
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 156.252.229.30
@@ -37,12 +37,12 @@ proxies:
   servername: play.googleapis.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 66.163.118.62
+  server: 66.163.118.244
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
