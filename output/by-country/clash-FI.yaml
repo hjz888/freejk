@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
+  server: 172.66.0.1
+  port: 2053
   udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

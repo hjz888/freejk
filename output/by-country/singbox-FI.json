@@ -4,16 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "172.66.0.1",
+      "server_port": 2053,
+      "password": "gHQP0D7D15",
+      "tls": {
+        "enabled": true,
+        "server_name": "marvdasht.phonecomparisonblog.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "marvdasht.phonecomparisonblog.org"
         }
       }
     },
