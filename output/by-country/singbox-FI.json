@@ -20,26 +20,23 @@
     {
       "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "172.66.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
+      "server": "199.232.8.223",
+      "server_port": 443,
+      "password": "TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ",
       "tls": {
         "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "community.fastly.steamstatic.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
+          "Host": "Hokkaneno-acc2-pirima.global.ssl.fastly.net"
         }
       }
     },

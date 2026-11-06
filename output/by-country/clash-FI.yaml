@@ -16,13 +16,13 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 172.66.0.1
-  port: 2053
+  server: 199.232.8.223
+  port: 443
   udp: true
   type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
+  password: TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ
+  sni: community.fastly.steamstatic.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
