@@ -16,13 +16,21 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 199.232.8.223
-  port: 443
+  server: 179.253.82.47
+  port: 4444
+  udp: true
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 104.18.0.1
+  port: 2053
   udp: true
   type: trojan
-  password: TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ
-  sni: community.fastly.steamstatic.com
-  skip-cert-verify: true
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
@@ -33,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES

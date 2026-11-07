@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.16.10.100",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "type": "trojan",
+      "tag": "🇭🇺 匈牙利 (Hungary) 01 - xiaohe",
+      "server": "208.103.161.16",
+      "server_port": 2096,
+      "password": "hWsj5AwIRPF8",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
+        "server_name": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2560",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

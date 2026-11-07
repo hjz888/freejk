@@ -18,25 +18,40 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "199.232.8.223",
-      "server_port": 443,
-      "password": "TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ",
+      "server": "179.253.82.47",
+      "server_port": 4444,
+      "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
       "tls": {
         "enabled": true,
-        "server_name": "community.fastly.steamstatic.com",
-        "insecure": true,
+        "server_name": "fl3.nexfile.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "104.18.0.1",
+      "server_port": 2053,
+      "password": "gHQP0D7D15",
+      "tls": {
+        "enabled": true,
+        "server_name": "marvdasht.phonecomparisonblog.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "Hokkaneno-acc2-pirima.global.ssl.fastly.net"
+          "Host": "marvdasht.phonecomparisonblog.org"
         }
       }
     },
@@ -46,7 +61,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ]
     },
     {
@@ -54,7 +70,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
