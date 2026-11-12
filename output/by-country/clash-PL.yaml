@@ -1,0 +1,45 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 201.58.139.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: 57aac2t.pl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 85.119.147.10
+  port: 2443
+  udp: true
+  type: vless
+  uuid: a60777ef-1a2e-429b-a45e-97c81492b4d8
+  flow: xtls-rprx-vision
+  tls: true
+  servername: next-ru9s.earthlink.work
+  skip-cert-verify: false
+  client-fingerprint: qq
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 02 - xiaohe
+rules:
+- MATCH,PROXIES
