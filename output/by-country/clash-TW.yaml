@@ -12,7 +12,7 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
@@ -25,8 +25,20 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 83.147.13.74
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +47,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
