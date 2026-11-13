@@ -5,11 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 45.86.60.174
-  port: 16443
+  server: nlll.obxodvpn.us
+  port: 443
   udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nlll.obxodvpn.us
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
