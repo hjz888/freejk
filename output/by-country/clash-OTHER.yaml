@@ -1,0 +1,54 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: JP032001.ssgreen.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 16586ea9-a30d-4323-97f3-1907b27f439f
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: JP032001.ssgreen.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032001.ssgreen.org
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: JP032001.ssgreen.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 16586ea9-a30d-4323-97f3-1907b27f439f
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: JP032001.ssgreen.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032001.ssgreen.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+rules:
+- MATCH,PROXIES
