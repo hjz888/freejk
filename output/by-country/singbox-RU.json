@@ -37,12 +37,12 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "185.197.193.137",
+      "server": "200.169.179.233",
       "server_port": 443,
-      "uuid": "313b84fa-b922-500f-9b65-acb67c040cc0",
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
-        "server_name": "us2.v2less.site",
+        "server_name": "vps3.nemnogogo.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -50,11 +50,24 @@
         }
       },
       "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
+      "server": "185.39.204.117",
+      "server_port": 10002,
+      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.vpnjantit.com",
+        "insecure": false
+      },
+      "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "us2.v2less.site"
-        }
+        "path": "/vpnjantit"
       }
     },
     {
@@ -64,7 +77,8 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ]
     },
     {
@@ -73,7 +87,8 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
