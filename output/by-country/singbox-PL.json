@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "132.243.212.204",
+      "server": "45.194.66.177",
       "server_port": 443,
       "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "10w0wjw.virtual-network.lol",
+        "server_name": "31tawwo0.virtual-network.lol",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -23,20 +23,20 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "80.47.10.106",
+      "server": "143.246.41.214",
       "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "uuid": "be146d46-ae50-4691-838c-b6c87dbaec8f",
       "tls": {
         "enabled": true,
-        "server_name": "pl8.galioncc.com",
+        "server_name": "702e56t.pl5.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
+          "public_key": "8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA",
+          "short_id": "1d5ac21e988c571f"
         }
       }
     },
