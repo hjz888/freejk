@@ -18,17 +18,29 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
+  server: dg3yg.mateflora.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: dg3yg.mateflora.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 8utjvetgzbiuwfa7
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,59 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  server: 5.188.181.201
+  port: 9031
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 5.188.181.201
+  port: 9025
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 79.127.139.242
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 5.188.181.201
+  port: 9037
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: TN2YqghxeFDKZfLU
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 5.188.181.201
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 5.188.181.201
+  port: 9014
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
   server: 66.163.118.103
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 66.163.118.244
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: 66.163.118.115
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 66.163.118.166
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  server: 66.163.118.131
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
   server: 194.76.168.133
   port: 443
   udp: true
@@ -72,6 +75,22 @@ proxies:
     path: /realtime/client/connect
     headers:
       Host: nemicro487.gangtype.com
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaohe
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +104,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +120,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 11 - xiaohe
 rules:
 - MATCH,PROXIES
