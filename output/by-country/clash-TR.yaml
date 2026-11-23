@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: chatgpt.com
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   tls: true
   servername: sinavm3.soft10.ir
   skip-cert-verify: false

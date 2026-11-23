@@ -4,19 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "38.107.234.57",
-      "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "type": "trojan",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "43.255.157.222",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
+        "server_name": "xvxn1hkzf.mateflora.com",
+        "insecure": true
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
