@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 188.225.78.178
-  port: 443
+  server: 143.246.136.128
+  port: 50738
   udp: true
   type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   tls: true
-  servername: cadrin.wtf
+  servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cache.sync.v1
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -14,21 +14,21 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "152.53.1.170",
+      "server": "144.31.131.73",
       "server_port": 443,
-      "uuid": "4fddfe0e-fddc-4032-b4c8-09c6d811fed0",
+      "uuid": "534a0469-a507-4fec-b9a1-f648864e5da0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "node-au.neverlock.uk",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "aura2.fastlaplegends.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QQgfv5J_fvr_v7GrfflVOb9ZRvBf66qfRzGWS8EKxQw",
+          "short_id": ""
         }
       }
     },
