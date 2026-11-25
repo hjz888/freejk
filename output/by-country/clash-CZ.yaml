@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.52.69.249
+  server: 109.248.17.252
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
+  uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
   tls: true
-  reality-opts:
-    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
-    short-id: d5492c7a39515c65
-  servername: cache-78.topp-con.xyz
-  client-fingerprint: chrome
+  servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: leviko-nl2962.shopingggg.ir
+  server: leviko-nl9472.shopingggg.ir
   port: 9543
   udp: true
   type: vless
@@ -31,15 +31,18 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 92.63.189.39
-  port: 8443
+  server: 153.52.69.249
+  port: 443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-0005-9434-7ab060848b17
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
-  servername: avelon.onl
-  skip-cert-verify: false
+  reality-opts:
+    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
+    short-id: d5492c7a39515c65
+  servername: cache-78.topp-con.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

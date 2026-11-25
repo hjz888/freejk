@@ -5,16 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 13.141.36.163
-  port: 443
+  server: 94.159.98.82
+  port: 2053
   udp: true
   type: vless
-  uuid: 73ebb72a-e2a8-44c8-a0e3-938740a4f578
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: NMS-P97L7IrYGl7mQv1j2K_EBX6G57fu6DvREZYl01U
-    short-id: 35a329a23bb50d2b
-  servername: 079b6et.ee5.h1clayd.shop
+  servername: 94.159.98.82
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

@@ -33,13 +33,37 @@ proxies:
   server: 136.148.83.69
   port: 443
   udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: dc.insidenet.ru
+  port: 20443
+  udp: true
+  type: vless
+  uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4
+    short-id: f847646adc2b82fe
+  servername: dc.insidenet.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: xssite.webredirect.org
   port: 443
   udp: true
@@ -61,6 +85,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +96,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

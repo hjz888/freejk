@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "13.141.36.10",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "172.64.155.209",
       "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
       "tls": {
         "enabled": true,
-        "server_name": "5d0319t.nl7.h1clayd.click",
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
-          "short_id": "361d0dd59c70516f"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
