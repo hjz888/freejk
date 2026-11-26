@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "devcdn.icu",
+      "server_port": 443,
+      "uuid": "b432a23a-acff-425c-bf69-70480cd6ed09",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "devcdn.icu",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/edge/chunk/b2265efffa29/",
+        "headers": {
+          "Host": "devcdn.icu"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

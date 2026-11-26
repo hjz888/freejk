@@ -5,16 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-      "server": "v2new.nimbaha9.ir",
-      "server_port": 8080,
-      "uuid": "308230a0-0097-4158-98d7-8f09bf339d60",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "38.107.234.57",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/XDS45",
-        "headers": {
-          "Host": "v2new.nimbaha9.ir"
-        }
+        "path": "/vless/"
       }
     },
     {
@@ -22,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

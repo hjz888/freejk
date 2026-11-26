@@ -39,17 +39,25 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 168.110.63.247
-  port: 8081
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 168.138.43.75
+  port: 80
   udp: true
   type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 155.248.175.201
   port: 23169
   udp: true
@@ -59,8 +67,19 @@ proxies:
   tls: true
   servername: djj.zjlo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 161.33.20.255
+  port: 8880
+  udp: true
+  type: vmess
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
   server: 149.28.29.156
   port: 443
   udp: true
@@ -77,49 +96,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 162.159.130.234
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.21.70.21
-  port: 443
+  server: vl-x2.qz10086.top
+  port: 38105
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d235ad20-8f30-441e-871e-ee2695e4c430
+  flow: xtls-rprx-vision
   tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+  reality-opts:
+    public-key: y0p1yI8OoWqcOE4XEv7ueudaSOOc5UIb5yFyA3SstD8
+    short-id: 7e7e8c23
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
