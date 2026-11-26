@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
+  server: leviko-tr3795.shopingggg.ir
   port: 50738
   udp: true
   type: vless
@@ -14,17 +14,30 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: v2new.nimbaha9.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
